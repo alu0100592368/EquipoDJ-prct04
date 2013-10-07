@@ -28,8 +28,19 @@ for i in 0...m do                         #iteramos de nuevo sobre las filas
    end
 end
        
+puts "MATRIZ A"
+a.each do |fila|                          #por cada fila
+   puts fila.join(" ")             #imprime el resultado
+end
 
+puts"\n"
 
+puts "MATRIZ B"
+b.each do |fila|                          #por cada fila
+   puts fila.join(" ")             #imprime el resultado
+end
+
+puts "\n"
 
 puts "SUMA DE MATRICES"
 c.each do |fila|                          #por cada fila

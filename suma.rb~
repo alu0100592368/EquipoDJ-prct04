@@ -22,11 +22,23 @@ end
 for i in 0...m do                         #iteramos de nuevo sobre las filas
    for j in 0...n do                      #por cada fila, se iteran columnas
       for k in 0...m do                      #por cada fila, se iteran columnas
-        c[i][j] += (a[i][k] * b[k][j])
+        d[i][j] += (a[i][k] * b[k][j])
+	c[i][j] = a[i][j] + b[i][j]
       end
    end
 end
        
+puts "MATRIZ A"
+a.each do |fila|                          #por cada fila
+   puts fila.join(" ")             #imprime el resultado
+end
+
+puts"\n"
+
+puts "MATRIZ B"
+b.each do |fila|                          #por cada fila
+   puts fila.join(" ")             #imprime el resultado
+end
 
 
 
