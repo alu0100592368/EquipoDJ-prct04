@@ -6,6 +6,7 @@ c = Array.new				   #matriz de filas c
 d = Array.new
 m, n = a.size, a[1].size                  #m son las filas y n las columnas
 
+
 for i in 0...m do                         #iterador sobre m filas
    c[i] = Array.new                       #la 2da dimension (columnas) de c
    d[i] = Array.new
@@ -17,17 +18,14 @@ end
 
 
 
+
 for i in 0...m do                         #iteramos de nuevo sobre las filas
    for j in 0...n do                      #por cada fila, se iteran columnas
       for k in 0...m do                      #por cada fila, se iteran columnas
-        c[i][j] += (a[j][k] * b[k][j])
-	puts "Posicion: D[#{i},#{j}] = #{d[i][j]} + (#{a[j][k]} * #{b[k][j]})"
-# 	c[i][j] = a[i][j] + b[i][j]         #se calcula la suma
+        d[i][j] += (a[i][k] * b[k][j])
+	c[i][j] = a[i][j] + b[i][j]
       end
-      puts "Resultado: #{d[i][j]}"
-     puts"\n	"   
    end
-   puts"\n	"
 end
        
 
