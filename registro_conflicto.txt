@@ -1,0 +1,38 @@
+Registro de conflictos:
+Hemos tenido el siguiente conflicto, resulta una vez terminada la suma de matrices en la rama diego, el compañero Javier mezclo la rama diego con la suya y terminó la practica añadiendo la multiplicación de matrices. Entonces cuando intenté volver hacer cambios en la rama diego apareció el siguiente mensaje:
+
+Diego@MacBook-de-Diego prct04 (diego) $ git push origin diego
+To git@github.com:alu0100592368/EquipoDJ-prct04.git
+ ! [rejected]        diego -> diego (non-fast-forward)
+error: failed to push some refs to 'git@github.com:alu0100592368/EquipoDJ-prct04.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+- Entonces actualice mi rama poniendo git pull y obtuve el mensaje de conflicto:
+Diego@MacBook-de-Diego prct04 (diego) $ git pull origin diego
+From github.com:alu0100592368/EquipoDJ-prct04
+ * branch            diego      -> FETCH_HEAD
+Auto-merging suma.rb
+CONFLICT (content): Merge conflict in suma.rb
+Automatic merge failed; fix conflicts and then commit the result.
+
+- Luego para resolver el conflicto tuve que arreglar manualmente los cambios en el fichero suma.rb a partir de la etiqueta "Head" como se muestra a continuación:
+
+<<<<<<< HEAD
+end
+=======
+end
+
+puts "\n"
+
+puts "PRODUCTOS DE MATRICES"
+
+d.each do |fila|
+  puts fila.join(" ")
+end
+>>>>>>> ced799dd5c56c712f182de528600b9e267e9484e
+
+- Finalmente se hizo un git commit con los últimos cambios y entonces el conflicto quedó resuelto.
