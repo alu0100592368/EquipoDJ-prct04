@@ -2,9 +2,9 @@
 
 a = [[3, 0, 2], [5, 1, 6], [4, 3, 1]]     #matriz a
 b = [[1, 4, 2], [4, 3, 3], [1, 3, 6]]     #matriz b
-#c = Array.new(3, Array.new(3,0))			   #matriz de filas c
+c = Array.new			   #matriz de filas c
 #puts c
-#d = Array.new(3, Array.new(3,0))
+d = Array.new
 m, n = a.size, a[1].size                  #m son las filas y n las columnas
 
 
@@ -41,7 +41,7 @@ a.each do |fila|                          #por cada fila
    puts fila.join(" ")             #imprime el resultado
 end
 
-
+puts "\n"
 
 puts "SUMA DE MATRICES"
 c.each do |fila|                          #por cada fila
