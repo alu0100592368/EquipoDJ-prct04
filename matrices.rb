@@ -6,7 +6,6 @@ c = Array.new			          #inicializando matriz c
 d = Array.new                             #inicializando matriz d
 m, n = a.size, a[1].size                  #m son las filas y n las columnas
 
-
 for i in 0...m do                        #iterador sobre m filas
   c[i] = Array.new                       #la 2da dimension (columnas) de c
   d[i] = Array.new
@@ -15,7 +14,6 @@ for i in 0...m do                        #iterador sobre m filas
     d[i][j] = 0
   end
 end
-
 
 for i in 0...m do                        #iteramos de nuevo sobre las filas
   for j in 0...n do                      #por cada fila, se iteran columnas

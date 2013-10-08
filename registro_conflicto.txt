@@ -1,5 +1,7 @@
 Registro de conflictos:
-Hemos tenido el siguiente conflicto, resulta una vez terminada la suma de matrices en la rama diego, el compañero Javier mezclo la rama diego con la suya y terminó la practica añadiendo la multiplicación de matrices. Entonces cuando intenté volver hacer cambios en la rama diego apareció el siguiente mensaje:
+Hemos tenido el siguiente conflicto, resulta una vez terminada la suma de matrices en la rama diego, el compañero 
+Javier mezcló la rama diego con la suya y terminó la practica añadiendo la multiplicación de matrices. 
+Entonces cuando intenté volver hacer cambios en la rama diego apareció el siguiente mensaje:
 
 Diego@MacBook-de-Diego prct04 (diego) $ git push origin diego
 To git@github.com:alu0100592368/EquipoDJ-prct04.git
@@ -19,20 +21,19 @@ Auto-merging suma.rb
 CONFLICT (content): Merge conflict in suma.rb
 Automatic merge failed; fix conflicts and then commit the result.
 
-- Luego para resolver el conflicto tuve que arreglar manualmente los cambios en el fichero suma.rb a partir de la etiqueta "Head" como se muestra a continuación:
+- Luego para resolver el conflicto tuve que arreglar manualmente los cambios en el fichero suma.rb y para ello
+se sustituyó la línea 2 por la línea 4 como se muestra a continuación:
 
-<<<<<<< HEAD
-end
-=======
-end
-
-puts "\n"
-
-puts "PRODUCTOS DE MATRICES"
-
-d.each do |fila|
-  puts fila.join(" ")
-end
+1 <<<<<<< HEAD
+2 end
+3 =======
+4 puts "\n"
+5 
+6 puts "PRODUCTOS DE MATRICES"
+7
+8 d.each do |fila|
+9   puts fila.join(" ")
+10 end
 >>>>>>> ced799dd5c56c712f182de528600b9e267e9484e
 
 - Finalmente se hizo un git commit con los últimos cambios y entonces el conflicto quedó resuelto.
