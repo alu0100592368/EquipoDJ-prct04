@@ -1,4 +1,5 @@
 Registro de conflictos:
+
 Hemos tenido el siguiente conflicto, resulta una vez terminada la suma de matrices en la rama diego, el compañero 
 Javier mezcló la rama diego con la suya y terminó la practica añadiendo la multiplicación de matrices. 
 Entonces cuando intenté volver hacer cambios en la rama diego apareció el siguiente mensaje:
