@@ -20,7 +20,7 @@ La práctica consiste en Desarrollar un programa, utilizando el paradigma de pro
 - Para la multiplicación el programa multiplicará dos matrices A y B dadas y mostrará el resultado final:
 
         | 3 0 2 |   | 1 4 2 |   | 5  18  18 |
-        | 5 1 6 | + | 4 3 3 | = | 15 41  49 |
+        | 5 1 6 | * | 4 3 3 | = | 15 41  49 |
         | 4 3 1 |   | 1 3 6 |   | 17 28  23 |
 
 Instrucciones
@@ -28,7 +28,7 @@ Instrucciones
 
 1. Ejecutar el programa de forma manual:
 
-        $ ruby suma.rb
+        $ ruby matrices.rb
 
 
 ---
