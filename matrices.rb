@@ -32,7 +32,7 @@ end
 puts"\n"
 
 puts "MATRIZ B"
-a.each do |fila|                         #por cada fila
+b.each do |fila|                         #por cada fila
   puts fila.join(" ")                   #imprime el resultado
 end
 
